@@ -1,9 +1,12 @@
+
+```markdown
 # eCommerce Platform Project - MERN Stack
 
 Welcome to the eCommerce Platform Project built using the MERN (MongoDB, Express.js, React, Node.js) Stack. This project provides a robust and full-featured online shopping platform with various functionalities to enhance the user experience.
 
-**Live App Demo** : [https://mern-shop-abxs.onrender.com/](https://mern-shop-abxs.onrender.com/)</br>
-Note: Please be aware that Render's free tier will automatically shut down after 15 minutes of inactivity. Consequently, the first request after reactivation may experience a delay, but subsequent requests will be faster.
+**Live App Demo** : [https://mern-shop-abxs.onrender.com/](https://mern-shop-abxs.onrender.com/)
+
+> Note: Please be aware that Render's free tier will automatically shut down after 15 minutes of inactivity. Consequently, the first request after reactivation may experience a delay, but subsequent requests will be faster.
 
 ## Features
 
@@ -13,8 +16,8 @@ Note: Please be aware that Render's free tier will automatically shut down after
 - **Product Pagination**: Navigate through products efficiently with pagination.
 - **Product Search Feature**: Easily search for products based on keywords.
 - **User Profile with Orders**: Users can create profiles and track their order history.
-- **Admin Dashboard**: Comprehensive dashboard for administrators to manage admins, products, users, and orders.
-- **Admin Admin Management**: Manage admin accounts.
+- **Admin Dashboard**: A comprehensive dashboard for administrators to manage admins, products, users, and orders.
+- **Admin Management**: Manage admin accounts.
 - **Admin Product Management**: Add, edit, and delete products from the platform.
 - **Admin User Management**: Manage user accounts.
 - **Admin Order Details Page**: Access detailed information about each order.
@@ -28,7 +31,7 @@ Note: Please be aware that Render's free tier will automatically shut down after
 ### Prerequisites
 
 1. Fork the repository to your GitHub account.
-2. Clone the forked repository to your local machine
+2. Clone the forked repository to your local machine:
 
 ```bash
 git clone https://github.com/your-username/MERN-eCommerce.git
@@ -40,9 +43,9 @@ cd MERN-eCommerce
 
 3. Create a MongoDB database and obtain your MongoDB URI from [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
 4. Create a Razorpay account and obtain your Key ID and Key Secret from [Razorpay](https://razorpay.com/).
-5. Create a Brevo account and generate a new SMTP Key from [Brevo](https://www.brevo.com/)
+5. Create a Brevo account and generate a new SMTP Key from [Brevo](https://www.brevo.com/).
 
-### Env Variables
+### Environment Variables
 
 1. Rename the `.env.example` file to `.env` and add the following environment variables:
 
@@ -51,9 +54,9 @@ NODE_ENV=development
 PORT=5000
 JWT_SECRET=ADD_YOUR_JWT_SECRET_HERE
 MONGO_URI=ADD_YOUR_MONGO_URI_HERE
-RAZORPAY_KEY_ID=ADD_YOUT_RAZORPAY_KEY_ID
+RAZORPAY_KEY_ID=ADD_YOUR_RAZORPAY_KEY_ID
 RAZORPAY_KEY_SECRET=ADD_YOUR_RAZORPAY_KEY_SECRET
-PAGINATION_MAX_LIMIT=12 # This will show 12 products per page; you can change it.
+PAGINATION_MAX_LIMIT=12  # This will show 12 products per page; you can change it.
 EMAIL_HOST=smtp-relay.brevo.com
 EMAIL_PORT=587
 EMAIL_USER=ADD_YOUR_BREVO_LOGIN
@@ -130,62 +133,54 @@ We welcome and appreciate contributions from the community to enhance and improv
 ## Getting Started
 
 1. Fork the repository to your GitHub account.
-
 2. Clone the forked repository to your local machine:
 
-   ```bash
-   git clone https://github.com/your-username/MERN-eCommerce.git
-   ```
+```bash
+git clone https://github.com/your-username/MERN-eCommerce.git
+```
 
 3. Navigate to the project directory:
 
-   ```bash
-   cd MERN-eCommerce
-   ```
+```bash
+cd MERN-eCommerce
+```
 
 4. Create a new branch for your contributions:
 
-   ```bash
-   git checkout -b feature/your-feature-name
-   git checkout -b issues/your-issue-name
-   ```
+```bash
+git checkout -b feature/your-feature-name
+git checkout -b issues/your-issue-name
+```
 
 ## Making Changes
 
 1. Implement your changes and improvements.
-
 2. Ensure that your changes adhere to the project's coding style and conventions.
-
 3. Test your changes thoroughly to avoid introducing bugs.
-
 4. Update the project documentation if necessary.
 
 ## Committing Changes
 
 1. Commit your changes with a descriptive commit message:
 
-   ```bash
-   git add .
-   git commit -m "Add your descriptive commit message here"
-   ```
+```bash
+git add .
+git commit -m "Add your descriptive commit message here"
+```
 
 2. Push your changes to your forked repository:
 
-   ```bash
-   git push origin feature/your-feature-name
-   git push origin issues/your-issue-name
-   ```
+```bash
+git push origin feature/your-feature-name
+git push origin issues/your-issue-name
+```
 
 ## Creating a Pull Request (PR)
 
 1. Visit your forked repository on GitHub.
-
 2. Switch to the branch containing your changes.
-
 3. Click on the "New Pull Request" button.
-
 4. Provide a clear title and description for your pull request, explaining the purpose and scope of your changes.
-
 5. Submit the pull request.
 
 ## Code Review
@@ -195,5 +190,5 @@ Your contribution will be reviewed by the project maintainers. Be prepared to ad
 ## Thank You!
 
 Thank you for considering contributing to the eCommerce Platform Project. Your efforts help make this project better for everyone. If you have any questions or need assistance, feel free to reach out through the issue tracker or discussions. Happy coding🤩!
-# eCommerece
-# eCommerece
+```
+
