@@ -4,7 +4,7 @@ services:
     env: node
     plan: free
     buildCommand: "npm install"
-    startCommand: "node server.js"
+    startCommand: "node backend/server.js"
     envVars:
       - key: NODE_ENV
         value: production
@@ -28,13 +28,13 @@ services:
         sync: false
       - key: EMAIL_FROM
         sync: false
-    staticPublishPath: ./frontend/build
 
-  - type: static
+  - type: web
     name: shopsphere-frontend
-    env: static
-    buildCommand: "npm install && npm run build"
-    staticPublishPath: frontend/build
+    env: node
+    plan: free
+    buildCommand: "npm install --prefix frontend && npm run build --prefix frontend"
+    startCommand: "serve -s frontend/build"
     envVars:
       - key: NODE_ENV
         value: production
