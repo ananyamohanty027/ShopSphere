@@ -1,0 +1,40 @@
+services:
+  - type: web
+    name: shopsphere-backend
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "node server.js"
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: RAZORPAY_KEY_ID
+        sync: false
+      - key: RAZORPAY_KEY_SECRET
+        sync: false
+      - key: EMAIL_HOST
+        sync: false
+      - key: EMAIL_PORT
+        sync: false
+      - key: EMAIL_USER
+        sync: false
+      - key: EMAIL_PASS
+        sync: false
+      - key: EMAIL_FROM
+        sync: false
+    staticPublishPath: ./frontend/build
+
+  - type: static
+    name: shopsphere-frontend
+    env: static
+    buildCommand: "npm install && npm run build"
+    staticPublishPath: frontend/build
+    envVars:
+      - key: NODE_ENV
+        value: production
